@@ -1,57 +1,70 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ninjaz Club</title>
-        <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
-            <a href="#" class="logo">Ninjaz Club</a>
-            <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#minta">Mint</a></li>
-                <li><a href="#">Game</a></li>
-                <li><a href="#">ArtTools</a></li>
-            </ul>
-        </header>
-        <section class="section1">
-            <img src="assets/img/stars.png" id="stars">
-            <img src="assets/img/moon.png" id="moon">
-            <img src="assets/img/mountains_behind.png" id="mountains_behind">
-            <h2 id="text">Ninjaz Club</h2>
-            <a href="#minta" id="btn">Explore</a>
-            <img src="assets/img/mountains_front.png" id="mountains_front">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ninjaz Club</title>
+<link href="assets/img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<header>
+<a class="logo" href="#">Ninjaz Club</a>
+<ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="#minta">Mint</a></li>
+<li><a href="#">Game</a></li>
+<li><a href="#">ArtTools</a></li>
+</ul>
+</header>
+<section class="section1">
+<img id="stars" src="assets/img/stars.png"/>
+<img id="moon" src="assets/img/moon.png"/>
+<img id="mountains_behind" src="assets/img/mountains_behind.png"/>
+<h2 id="text">Ninjaz Club</h2>
+<a href="#minta" id="btn">Explore</a>
+<img id="mountains_front" src="assets/img/mountains_front.png"/>
+</section>
+<section id="minta">
+<img id="banner" src="assets/img/banner.svg"/>
+<div class="sec" id="sec">
+<h2>Ninjaz Mint</h2>
+<p>Ninjaz Club aim to bring the Ninja Vibe Art to the blockchain. We love to build together with the community!</p><br/>
+</div>
+<!-- <iframe class="frame" src="https://mint.webmint.io/mint-module/nnn?test=true" width="880" height="550" frameBorder="0"></iframe> -->
+<container class="framea" height="550" width="880"><span id="countdown">Mint Coming Soon</span></container>
+</section>
+<section id="wallet-check">
+<img id="banner" src="assets/img/back.svg"/>
+<div class="container">
+<h2>Check your Wallet Address</h2>
+<input id="wallet-address" placeholder="    Enter your wallet address" type="text"/>
+<button id="checkbtn" onclick="checkWallet()">Check</button>
+<p id="wallet-message"></p>
+</div>
+</section>
+<section class="new">
+<img id="banner" src="assets/img/dd.svg">
+<div class="ninjazclub-info">
+    <h1>What is a NinjazClub?</h1>
+    <p>NinjazClub is a unique collection of PFPs representing a community of digital ninjas. Each NFT within the NinjazClub collection is a digital artwork featuring various traits 
+        and characteristics, resulting in a diverse and collectible set of ninjas.</p>
+    <br>
+    <h1>How many NinjazClub exist?</h1>
+    <p>There is a total of 3,333 NinjazClub NFTs in existence. This limited supply enhances the exclusivity and value of each NFT within the collection.</p>
+    <p>NinjazClub has already collaborated with other prominent NFT communities, such as BoringPunks, Neo Yauto, and Beatles, to strengthen its presence in the NFT space. 
+        The project focuses on building a strong and dedicated community of collectors and enthusiasts. Carefully curated traits ensure that each NinjazClub NFT is a valuable and 
+        unique piece of digital art.</p>
+        <div class="social-logos">
+            <div class="twitter-logo">
+                <a href="https://twitter.com/NinjazClubNFT"><img src="assets/img/twitter.png" class="twitter_photo"></a>Twitter</div>
+                <div class="discord-logo"><a href="https://discord.gg/fkRaG5dx"><img src="assets/img/discord.png" class="twitter_photo"></a>Discord</div>
+                <div class="opensea-logo"><a><img src="assets/img/opensea.png" class="twitter_photo"></a>Opensea</div>
+                <div class="block-logo"><img src="assets/img/block.png" class="twitter_photo"></div></div>
+            </div>
         </section>
-        <section id="minta">
-            <img src="assets/img/banner.svg" id="banner">
-        <div class="sec" id="sec">
-            <h2>Ninjaz Mint</h2>
-            <p>Ninjaz Club aim to bring the Ninja Vibe Art to the blockchain. We love to build together with the community!</p><br>
-        </div>
-            <!-- <iframe class="frame" src="https://mint.webmint.io/mint-module/nnn?test=true" width="880" height="550" frameBorder="0"></iframe> -->
-            <container class="framea" width="880" height="550"><span id="countdown">Mint Coming Soon</span></container>
-    </section>
-    <section id="wallet-check">
-        <img src="assets/img/back.svg" id="banner">
-        <div class="container">
-            <h2>Check your Wallet Address</h2>
-            <input type="text" id="wallet-address" placeholder="    Enter your wallet address">
-            <button id="checkbtn" onclick="checkWallet()">Check</button>
-            <p id="wallet-message"></p>
-        </div>
-    </section>
-
-    
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src="scrollreveal.min.js"></script>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="main.js"></script>
-
-        <script>
+<script>
             let stars = document.getElementById('stars');
             let moon = document.getElementById('moon');
             let mountains_behind = document.getElementById('mountains_behind');
@@ -71,7 +84,6 @@
                 header.style.top = value * 0.5 + 'px';
             })
         </script>
-    
 <script>
     var whitelist = [
         {"Wallet":"0xfe40a1e27a85c32a296dc2f7619c4e085fbf827d","amount":1},{"Wallet":"0x4c73b8ceb63779d7c812a93265cc1f38965d8f24","amount":1},
@@ -146,56 +158,58 @@
         {"Wallet":"0x257DEfEC1163242Adf0ad850BB9E541f2b322222","amount":1},{"Wallet":"0x0000097467cE1e905E952983a4F9D5Ab656f9425","amount":1},
         {"Wallet":"0xEfC9Ac04a1EA9FA2526289c72C7c606ECF971101","amount":1},{"Wallet":"0x7E9c268d38DA976A1b371Ec72CDC83C728177858","amount":1},
         {"Wallet":"0x76dB815a1C977124F2EcC8861c3215161d9c1a89","amount":1},{"Wallet":"0x06c0e480a9f1E6a4Bd5EffC0d67C08F5088734D1","amount":1},
-  {"Wallet":"0x90e42Fa8351e93fBAd25dAB071255156c430DB33","Amount":1},{"Wallet":"0x1294332C03933C770A0D91ADC7E0F1FccC7476b9","Amount":1},
-  {"Wallet":"0x481c6116506B890308C239Cc6E7053Fe72AD0Cdd","Amount":1},{"Wallet":"0x73B41FAfc67fbee0Afd35EAEAba76e7468083f07","Amount":1},
-  {"Wallet":"0x41343A187850ecfaFfB4f543abDDBfD090c514D3","Amount":1},{"Wallet":"0x567daF7C0B310F12Ea58CF6F559B5Ee5cbE1f30c","Amount":1},
-  {"Wallet":"0xD438FD0c855D6e6a07A027D4A22C97bEdB605B2e","Amount":1},{"Wallet":"0x27995027ab6456f0809844927a09f04c3e73afcc","Amount":1},
-  {"Wallet":"0x562b74a4BeFbE9BDD2A4B2c92d8871557b2F9a38","Amount":1},{"Wallet":"0x6Abc4BEc543eB7F5819a8Ed2c87fb9A8Fd5b9A85","Amount":1},
-  {"Wallet":"0x96A4e8e93f2E4ac4eC9722e5310403C794edD32F","Amount":1},{"Wallet":"0x3910CbfCA62559CEC14f51E93F320823D149fe2D","Amount":1},
-  {"Wallet":"0x322a5623F9e886d3c6c156566C5AA1Eb0B7dd4Fb","Amount":1},{"Wallet":"0x02221A91a389d4DfeFFE9756ad02f1dA4872269F","Amount":1},
-  {"Wallet":"0x640Aaa84d40aD811bCEb467A1C95FF406eAbf7E2","Amount":1},{"Wallet":"0x2b852DB04cEE866B47ddd105F86e66210eA8bD17","Amount":1},
-  {"Wallet":"0xc7b1192F82B161Afcb2F12e662FD3E646d42b763","Amount":1},{"Wallet":"0x4C1052BA8E85F9fD6574c7D49cBc54629d207B2e","Amount":1},
-  {"Wallet":"0xDb25afDB6b1556A11C5e29aCeEDdf497A038A09B","Amount":1},{"Wallet":"0xF451e0Be8CEE49735487b1a7259FB4fE5a7AD32e","Amount":1},
-  {"Wallet":"0xdb68A37014FaeaAB36f3d244f9649A6877d3b045","Amount":1},{"Wallet":"0xF7e4d4ffA401bAd6D3Bd90067029F8648C80db59","Amount":1},
-  {"Wallet":"0xF9b7e84fB8E58eD518F190298632a6a7462bb14A","Amount":1},{"Wallet":"0x1664EAfC12cf3B2991fEe868460A4de72FFE5816","Amount":1},
-  {"Wallet":"0x8C7e72dEB60a165e703E7597af50d77E9E31202d","Amount":1},{"Wallet":"0x3aF62D6a683E2B0e30C4c4016E955567460075f2","Amount":1},
-  {"Wallet":"0xB49D263432aABde1f0d97b44d8795282B3dF66e3","Amount":1},{"Wallet":"0xBE3352Ae7C20161d4fb1D0Dc2aad099227B5F246","Amount":1},
-  {"Wallet":"0x0201DF3025a3f824a9b63c85D86f7186BcB5d9A2","Amount":1},{"Wallet":"0x59395D88307b4522Df0E29222720FC37e850876b","Amount":1},
-  {"Wallet":"0x806a1226166Ddb39551b59ed952c56b6373A9D90","Amount":1},{"Wallet":"0x391018a054c9c55D534a153Be308711AC4b6C116","Amount":1},
-  {"Wallet":"0xc2A5c588F1f66D928272b398Ae74C16E850bb445","Amount":1},{"Wallet":"0xE657899C61E7Bf88B92b3BB313Ca3fcd5593B5c0","Amount":1},
-  {"Wallet":"0x4AE18cC98092D3103CB6F3D81D0D563A31Db2bB9","Amount":1},{"Wallet":"0xC36340d880E5519E438a6F74E41419D745718f6d","Amount":1},
-  {"Wallet":"0x69fa7015e3605be220018b5fD747669Cf8Da8Ff0","Amount":1},{"Wallet":"0x4d701945B8c0feDb5b1751c3a2bB1aA3eD22AE7a","Amount":1},
-  {"Wallet":"0xD7fE1FAc2F93740F72C94D1911b1b7773722126b","Amount":1},{"Wallet":"0xA171574706d53bA0a237fE4BaDF79A71fAE0b480","Amount":1},
-  {"Wallet":"0xD2A5Ab6D3faC75EeCA94dE73948E5Fc376B269A5","Amount":1},{"Wallet":"0xce51D1fa776C2941d4155E8FfCc585c5a1213d50","Amount":1},
-  {"Wallet":"0x52ed429Ee4b6fF89c64853758D711BB9579086F7","Amount":1},{"Wallet":"0x96B9B67543bBa010028555577839ac307bF90602","Amount":1},
-  {"Wallet":"0xacDD4086723ad20784c240af22F4204c00eF9362","Amount":1},{"Wallet":"0x666530590742Ad5359d601C2304DAFdF4a521953","Amount":1},
-  {"Wallet":"0xF7B4D14AB6426C3B5790402cFD7BC5A24F87A849","Amount":1},{"Wallet":"0x09615990c45EC5Cc743B4Eab5b436E232612606D","Amount":1},
-  {"Wallet":"0x2f872Aa2Fe3f2aF5988838baEe6a008F07B1269C","Amount":1},{"Wallet":"0x88827AaB81D0AfC61994221Dc54c5D795D0eA6d4","Amount":1},
-  {"Wallet":"0x7741683DF6218ec64Fb39bBb7CC0E1cfBf801380","Amount":1},{"Wallet":"0x2e95Fc6ddC2eAfD7c5d5E52d20d2A706502cdD89","Amount":1},
-  {"Wallet":"0x2C7Eb759cBACfAD6583Dd24f3180e44578d95b20","Amount":1},{"Wallet":"0xc0Fa05D1AC0f151e809370B362Fa7c42233c4842","Amount":1},
-  {"Wallet":"0xF2B548394F5E8eE171209739d66675594BE555E0","Amount":1},{"Wallet":"0xe99455894242fE88D4A1Db765c170DD4E101f07d","Amount":1},
-  {"Wallet":"0x391018a054c9c55D534a153Be308711AC4b6C116","Amount":1},{"Wallet":"0xd69Ea89EB5B347BD1Dd63C85b89FD2c9eA8e91b1","Amount":1},
-  {"Wallet":"0xF7b0C573412D449B629e17F1e8Ec85268771Ee28","Amount":1},{"Wallet":"0xbA96896F1971839AB260B3c9053F1caCb8e55039","Amount":1},
-  {"Wallet":"0x2E4404A2ceabdB3919e1e5c72DA23B713b2D3FbF","Amount":1},{"Wallet":"0x3CB5BCb7DBa9767a424A6274186960C6De70b947","Amount":1},
-  {"Wallet":"0x0C3d63B1DD8f27190C637A132a7CA7c959d387d3","Amount":1},{"Wallet":"0x4052B6DaF98E8c135ED94852F87905fEBbFF13a7","Amount":1},
-  {"Wallet":"0x3Cd957Ce72f366A3df26c46E4e245778E108e06A","Amount":1},{"Wallet":"0x5a08efB0894b92704DBDFe04fE90248Bdd72e8c3","Amount":1},
-  {"Wallet":"0x44b48aDeC7e43268eA75cFDC0585410f87999b15","Amount":1},{"Wallet":"0x13a883c96B3a5F9b6a18E14a082459C8c5F349d5","Amount":1},
-  {"Wallet":"0xD154b29aEB90dD858853da94E447b6538199B0C3","Amount":1},{"Wallet":"0x74EacAe0BE752F9842c13fa34d8093C2009F9Ad0","Amount":1},
-  {"Wallet":"0xC235773D37CE2323C49A2C623F2093fE968100C6","Amount":1},{"Wallet":"0xfc6bBD600aEb710D062945e882ab473a78B1f953","Amount":1},
-  {"Wallet":"0x16F8E25a7Ce07033410D6C2bd3181529055C05DF","Amount":1},{"Wallet":"0xbc6D77Aa4FC4407897bac23d78dD4BDC1D5f8676","Amount":1},
-  {"Wallet":"0xE87294Fc9395b18BafbB4635442E3fBac4006E51","Amount":1},{"Wallet":"0x8a71dE5b44f8a5ADf7c935E4ED0b2d6AB4080F5D","Amount":1},
-  {"Wallet":"0x3Cc8811182b25620769f179772484BCa34616bB0","Amount":1},{"Wallet":"0xBA36293ffDAf9b61eFc54E00F7A1597169A1cC96","Amount":1},
-  {"Wallet":"0xC1dEE7C83495Fa42Fa748940931A5eef751f91e1","Amount":1},{"Wallet":"0x49EA5aA1089Ab325c53e8526F41ecde0106Ca496","Amount":1},
-  {"Wallet":"0x8dE171a56bBe4C0b2ec884ED4DAAc07713721475","Amount":1},{"Wallet":"0x4Da1aC24FaBB41a60C302960f19d62cC703Fb029","Amount":1},
-  {"Wallet":"0xbdc621888dd7cf58554b799205ffdff29f7d3c5f","Amount":1},{"Wallet":"0x964d27DaB9Bb0aEAeEbF850BBA84f68414da6Af4","Amount":1},
-  {"Wallet":"0xD5c27DFc8ad9791d618Bb132a7830c3282E25905","Amount":1},{"Wallet":"0x766FCf663D1f5D49777EBbDC978faFfE58f225D3","Amount":1},
-  {"Wallet":"0x033aaf79b498000556E5dF6e0Ce898A8B246A6EE","Amount":1},{"Wallet":"0x64F9f0cb7E34E7E9160B93fe558b3CCa72387922","Amount":1},
-  {"Wallet":"0x114BF2581d1cE38Ba5Ffbfa1959fbaD96b0F7673","Amount":1},{"Wallet":"0x59aE20eF0930b81E27A959eDC8d5EE230E733518","Amount":1},
-  {"Wallet":"0x8E4a4f62fcE1755C09E0Df3C1e1E661eF775E2DC","Amount":1},{"Wallet":"0x0C708FB3558f80b040634853E43013d12206d932","Amount":1},
-  {"Wallet":"0x898ad49711bed11d342EC75de9f93e69C9f1EfCa","Amount":1},{"Wallet":"0xF654bfc9670cfFE69B17d1933020d14E9735C390","Amount":1},
-  {"Wallet":"0xDB25A9245fc21D98bD79bF1b1e529a96EF78EaaA","Amount":1},{"Wallet":"0x1528d89696dCbF017B2D509efdFCD1E8e859a78e","Amount":1},
-  {"Wallet":"0xa20b898874A743740eBea5325ce67FF10c8143f3","Amount":1},{"Wallet":"0x49aD7Cd44D53A626dfA893E107FEc3517Fc83066","Amount":1},
-  {"Wallet":"0x8e969C5587f28b31aD4806d3a5A884D29aAd2015","Amount":1},{"Wallet":"0xf11E75fEABA90414286d398134f6be5167e82317","Amount":1}];
+        {"Wallet":"0x90e42Fa8351e93fBAd25dAB071255156c430DB33","Amount":1},{"Wallet":"0x1294332C03933C770A0D91ADC7E0F1FccC7476b9","Amount":1},
+        {"Wallet":"0x481c6116506B890308C239Cc6E7053Fe72AD0Cdd","Amount":1},{"Wallet":"0x73B41FAfc67fbee0Afd35EAEAba76e7468083f07","Amount":1},
+        {"Wallet":"0x41343A187850ecfaFfB4f543abDDBfD090c514D3","Amount":1},{"Wallet":"0x567daF7C0B310F12Ea58CF6F559B5Ee5cbE1f30c","Amount":1},
+        {"Wallet":"0xD438FD0c855D6e6a07A027D4A22C97bEdB605B2e","Amount":1},{"Wallet":"0x27995027ab6456f0809844927a09f04c3e73afcc","Amount":1},
+        {"Wallet":"0x562b74a4BeFbE9BDD2A4B2c92d8871557b2F9a38","Amount":1},{"Wallet":"0x6Abc4BEc543eB7F5819a8Ed2c87fb9A8Fd5b9A85","Amount":1},
+        {"Wallet":"0x96A4e8e93f2E4ac4eC9722e5310403C794edD32F","Amount":1},{"Wallet":"0x3910CbfCA62559CEC14f51E93F320823D149fe2D","Amount":1},
+        {"Wallet":"0x322a5623F9e886d3c6c156566C5AA1Eb0B7dd4Fb","Amount":1},{"Wallet":"0x02221A91a389d4DfeFFE9756ad02f1dA4872269F","Amount":1},
+        {"Wallet":"0x640Aaa84d40aD811bCEb467A1C95FF406eAbf7E2","Amount":1},{"Wallet":"0x2b852DB04cEE866B47ddd105F86e66210eA8bD17","Amount":1},
+        {"Wallet":"0xc7b1192F82B161Afcb2F12e662FD3E646d42b763","Amount":1},{"Wallet":"0x4C1052BA8E85F9fD6574c7D49cBc54629d207B2e","Amount":1},
+        {"Wallet":"0xDb25afDB6b1556A11C5e29aCeEDdf497A038A09B","Amount":1},{"Wallet":"0xF451e0Be8CEE49735487b1a7259FB4fE5a7AD32e","Amount":1},
+        {"Wallet":"0xdb68A37014FaeaAB36f3d244f9649A6877d3b045","Amount":1},{"Wallet":"0xF7e4d4ffA401bAd6D3Bd90067029F8648C80db59","Amount":1},
+        {"Wallet":"0xF9b7e84fB8E58eD518F190298632a6a7462bb14A","Amount":1},{"Wallet":"0x1664EAfC12cf3B2991fEe868460A4de72FFE5816","Amount":1},
+        {"Wallet":"0x8C7e72dEB60a165e703E7597af50d77E9E31202d","Amount":1},{"Wallet":"0x3aF62D6a683E2B0e30C4c4016E955567460075f2","Amount":1},
+        {"Wallet":"0xB49D263432aABde1f0d97b44d8795282B3dF66e3","Amount":1},{"Wallet":"0xBE3352Ae7C20161d4fb1D0Dc2aad099227B5F246","Amount":1},
+        {"Wallet":"0x0201DF3025a3f824a9b63c85D86f7186BcB5d9A2","Amount":1},{"Wallet":"0x59395D88307b4522Df0E29222720FC37e850876b","Amount":1},
+        {"Wallet":"0x806a1226166Ddb39551b59ed952c56b6373A9D90","Amount":1},{"Wallet":"0x391018a054c9c55D534a153Be308711AC4b6C116","Amount":1},
+        {"Wallet":"0xc2A5c588F1f66D928272b398Ae74C16E850bb445","Amount":1},{"Wallet":"0xE657899C61E7Bf88B92b3BB313Ca3fcd5593B5c0","Amount":1},
+        {"Wallet":"0x4AE18cC98092D3103CB6F3D81D0D563A31Db2bB9","Amount":1},{"Wallet":"0xC36340d880E5519E438a6F74E41419D745718f6d","Amount":1},
+        {"Wallet":"0x69fa7015e3605be220018b5fD747669Cf8Da8Ff0","Amount":1},{"Wallet":"0x4d701945B8c0feDb5b1751c3a2bB1aA3eD22AE7a","Amount":1},
+        {"Wallet":"0xD7fE1FAc2F93740F72C94D1911b1b7773722126b","Amount":1},{"Wallet":"0xA171574706d53bA0a237fE4BaDF79A71fAE0b480","Amount":1},
+        {"Wallet":"0xD2A5Ab6D3faC75EeCA94dE73948E5Fc376B269A5","Amount":1},{"Wallet":"0xce51D1fa776C2941d4155E8FfCc585c5a1213d50","Amount":1},
+        {"Wallet":"0x52ed429Ee4b6fF89c64853758D711BB9579086F7","Amount":1},{"Wallet":"0x96B9B67543bBa010028555577839ac307bF90602","Amount":1},
+        {"Wallet":"0xacDD4086723ad20784c240af22F4204c00eF9362","Amount":1},{"Wallet":"0x666530590742Ad5359d601C2304DAFdF4a521953","Amount":1},
+        {"Wallet":"0xF7B4D14AB6426C3B5790402cFD7BC5A24F87A849","Amount":1},{"Wallet":"0x09615990c45EC5Cc743B4Eab5b436E232612606D","Amount":1},
+        {"Wallet":"0x2f872Aa2Fe3f2aF5988838baEe6a008F07B1269C","Amount":1},{"Wallet":"0x88827AaB81D0AfC61994221Dc54c5D795D0eA6d4","Amount":1},
+        {"Wallet":"0x7741683DF6218ec64Fb39bBb7CC0E1cfBf801380","Amount":1},{"Wallet":"0x2e95Fc6ddC2eAfD7c5d5E52d20d2A706502cdD89","Amount":1},
+        {"Wallet":"0x2C7Eb759cBACfAD6583Dd24f3180e44578d95b20","Amount":1},{"Wallet":"0xc0Fa05D1AC0f151e809370B362Fa7c42233c4842","Amount":1},
+        {"Wallet":"0xF2B548394F5E8eE171209739d66675594BE555E0","Amount":1},{"Wallet":"0xe99455894242fE88D4A1Db765c170DD4E101f07d","Amount":1},
+        {"Wallet":"0x391018a054c9c55D534a153Be308711AC4b6C116","Amount":1},{"Wallet":"0xd69Ea89EB5B347BD1Dd63C85b89FD2c9eA8e91b1","Amount":1},
+        {"Wallet":"0xF7b0C573412D449B629e17F1e8Ec85268771Ee28","Amount":1},{"Wallet":"0xbA96896F1971839AB260B3c9053F1caCb8e55039","Amount":1},
+        {"Wallet":"0x2E4404A2ceabdB3919e1e5c72DA23B713b2D3FbF","Amount":1},{"Wallet":"0x3CB5BCb7DBa9767a424A6274186960C6De70b947","Amount":1},
+        {"Wallet":"0x0C3d63B1DD8f27190C637A132a7CA7c959d387d3","Amount":1},{"Wallet":"0x4052B6DaF98E8c135ED94852F87905fEBbFF13a7","Amount":1},
+        {"Wallet":"0x3Cd957Ce72f366A3df26c46E4e245778E108e06A","Amount":1},{"Wallet":"0x5a08efB0894b92704DBDFe04fE90248Bdd72e8c3","Amount":1},
+        {"Wallet":"0x44b48aDeC7e43268eA75cFDC0585410f87999b15","Amount":1},{"Wallet":"0x13a883c96B3a5F9b6a18E14a082459C8c5F349d5","Amount":1},
+        {"Wallet":"0xD154b29aEB90dD858853da94E447b6538199B0C3","Amount":1},{"Wallet":"0x74EacAe0BE752F9842c13fa34d8093C2009F9Ad0","Amount":1},
+        {"Wallet":"0xC235773D37CE2323C49A2C623F2093fE968100C6","Amount":1},{"Wallet":"0xfc6bBD600aEb710D062945e882ab473a78B1f953","Amount":1},
+        {"Wallet":"0x16F8E25a7Ce07033410D6C2bd3181529055C05DF","Amount":1},{"Wallet":"0xbc6D77Aa4FC4407897bac23d78dD4BDC1D5f8676","Amount":1},
+        {"Wallet":"0xE87294Fc9395b18BafbB4635442E3fBac4006E51","Amount":1},{"Wallet":"0x8a71dE5b44f8a5ADf7c935E4ED0b2d6AB4080F5D","Amount":1},
+        {"Wallet":"0x3Cc8811182b25620769f179772484BCa34616bB0","Amount":1},{"Wallet":"0xBA36293ffDAf9b61eFc54E00F7A1597169A1cC96","Amount":1},
+        {"Wallet":"0xC1dEE7C83495Fa42Fa748940931A5eef751f91e1","Amount":1},{"Wallet":"0x49EA5aA1089Ab325c53e8526F41ecde0106Ca496","Amount":1},
+        {"Wallet":"0x8dE171a56bBe4C0b2ec884ED4DAAc07713721475","Amount":1},{"Wallet":"0x4Da1aC24FaBB41a60C302960f19d62cC703Fb029","Amount":1},
+        {"Wallet":"0xbdc621888dd7cf58554b799205ffdff29f7d3c5f","Amount":1},{"Wallet":"0x964d27DaB9Bb0aEAeEbF850BBA84f68414da6Af4","Amount":1},
+        {"Wallet":"0xD5c27DFc8ad9791d618Bb132a7830c3282E25905","Amount":1},{"Wallet":"0x766FCf663D1f5D49777EBbDC978faFfE58f225D3","Amount":1},
+        {"Wallet":"0x033aaf79b498000556E5dF6e0Ce898A8B246A6EE","Amount":1},{"Wallet":"0x64F9f0cb7E34E7E9160B93fe558b3CCa72387922","Amount":1},
+        {"Wallet":"0x114BF2581d1cE38Ba5Ffbfa1959fbaD96b0F7673","Amount":1},{"Wallet":"0x59aE20eF0930b81E27A959eDC8d5EE230E733518","Amount":1},
+        {"Wallet":"0x8E4a4f62fcE1755C09E0Df3C1e1E661eF775E2DC","Amount":1},{"Wallet":"0x0C708FB3558f80b040634853E43013d12206d932","Amount":1},
+        {"Wallet":"0x898ad49711bed11d342EC75de9f93e69C9f1EfCa","Amount":1},{"Wallet":"0xF654bfc9670cfFE69B17d1933020d14E9735C390","Amount":1},
+        {"Wallet":"0xDB25A9245fc21D98bD79bF1b1e529a96EF78EaaA","Amount":1},{"Wallet":"0x1528d89696dCbF017B2D509efdFCD1E8e859a78e","Amount":1},
+        {"Wallet":"0xa20b898874A743740eBea5325ce67FF10c8143f3","Amount":1},{"Wallet":"0x49aD7Cd44D53A626dfA893E107FEc3517Fc83066","Amount":1},
+        {"Wallet":"0x9300D3405876d8C1d73b6a6B031367D79e7e7935","Amount":1},{"Wallet":"0xeACa597Ec7c1635EC2dFa2cc38958284538a61fA","Amount":1},
+        {"Wallet":"0x0e07f8973ae9ec62662e1d6616e162dac99321de","Amount":1},{"Wallet":"0x11118Edc748F8f05ae887F6E355328bF2597eB70","Amount":1},
+        {"Wallet":"0x8e969C5587f28b31aD4806d3a5A884D29aAd2015","Amount":1},{"Wallet":"0xf11E75fEABA90414286d398134f6be5167e82317","Amount":1}];
     var airdrop = [
         {"Wallet":"0x8E42e552156eed7ccEB205f1F8ab8c99cEAC5245","Amount":1},{"Wallet":"0x5B5a64082Bed7504958Ed735AF6F0b5D3a85552e","Amount":1},{"Wallet":"0x8063E4A232d50faf08e54373FabFca6Ee31c8537","Amount":1},{"Wallet":"0xB875Ba4fF9aCB32ae77d9550c1aeA8177fc6B3C6","Amount":1},{"Wallet":"0x3E65EAdD039F3B08dE06418b21Ac3C596df6BF1E","Amount":1},{"Wallet":"0x264F504E0088072711BBA9254E7ECd1383Dd0E2e","Amount":1},{"Wallet":"0x1F833D44E5053CccF5904d0F6257503719d1820d","Amount":1},{"Wallet":"0xe4BfA9DD7A3bC67f69F57727ccAe18965dd9D1d3","Amount":1},{"Wallet":"0xa5FE3873f42ff67130fa03AeDA9D0ADF86Ae471F","Amount":1},{"Wallet":"0xAFEd82D84074cc14A052737aD621b2C20E3abc89","Amount":1},{"Wallet":"0x1aEC0B18e3Af580A630912934D539904c09453B5","Amount":1},{"Wallet":"0xE16C3D6363c969B34793B9715486B8fAf2478457","Amount":1},{"Wallet":"0x59D13041878c6c9b6A898DD428e674Ef57E1E5A6","Amount":1},{"Wallet":"0xD1dB6D365bAe9458C467984599604C7373eC5dEf","Amount":1},{"Wallet":"0xAA1303BE98a613409aCE98738271033D5EFcdd02","Amount":1},{"Wallet":"0xce2e67709418b452d8fcd36a502af27bde7d4d56","Amount":1},{"Wallet":"0xd09e13e611bdfbb1a727322d26ec01a7838a1435","Amount":1},{"Wallet":"0x492a49b3ef64eb52a6e0db82777d86bda5b1627f","Amount":1},{"Wallet":"0xe61a23d3bce63cd1a89d40794568bd238f371e49","Amount":1},{"Wallet":"0xb61ccfa3c7fd972ad47752ab05c92f9e745fd2fc","Amount":1},{"Wallet":"0x31596033abe1dac8dda27db4657608050001b693","Amount":1},{"Wallet":"0x0e10a002a1e77fe73fa41feed962bd234f7a867f","Amount":1},{"Wallet":"0x7b4cfb6aa5332da8b19c6f2ab89aa5b9a346b4a3","Amount":1},{"Wallet":"0xc3af362f3789accf31db3e54af847b7959c548c5","Amount":1},{"Wallet":"0x55f827b71d33a0a588070a55ff683eef4eef9ab5","Amount":1},{"Wallet":"0x76792033d51B1f7a5f0be821E86D1A0b24d9a232","Amount":1},{"Wallet":"0x906A43Ef2107aC308335a3809f07bAa9644d46F6","Amount":1},{"Wallet":"0x8F32BE693E227b936287832f24EBc053461Abd5a","Amount":1},{"Wallet":"0x8408E0Fa9E3abD5425BD267EC2CF08c37A8def6F","Amount":1},{"Wallet":"0x13985126919fBEF2f7CCDa5AD4E0FE04a13DF3Ee","Amount":1},{"Wallet":"0x79869178A4287ae334E134a84Ae0B52125CfDee8","Amount":1},{"Wallet":"0xb2D1d261d0c4A05673c94a15E2F5CDEB5f54a729","Amount":1},{"Wallet":"0xe91A27E215E9FD0D31eB32348120Fd6747041E42","Amount":1},{"Wallet":"0xbc5420c52C1dFa5f46C31ed7f32C5BBf792C90A8","Amount":1},{"Wallet":"0xD0Bfb4178E005D52a42932E12b328869956E2cdd","Amount":1},{"Wallet":"0x3b4226bC82f2D7A5afC7F796480aBd2500d707c9","Amount":1},{"Wallet":"0xC405A3DA559f2a989eC37D2Be52513B1c36d32b3","Amount":1},{"Wallet":"0x230893E2E34a8dE8339f04479ebC77dA49B02Dc9","Amount":1},{"Wallet":"0xd2E32263D8BF81Fb91fF145757a3bf4b721Edf1C","Amount":1},{"Wallet":"0xC0f856E87eDE1bFc788A689efc68eE2368070934","Amount":1},{"Wallet":"0xe67EcbEFE92a952a73A235F0911a9ce20811a753","Amount":1},{"Wallet":"0xD5aE8dC4FfD59165cAa3d8f857045dd750fafAb8","Amount":1},{"Wallet":"0xa3f12c07c51d4efd637e279e89560c8c650239ef","Amount":1},{"Wallet":"0x5c9C54d2335f61C07bDba871dd78d07D67b1c310","Amount":1},{"Wallet":"0xC193a7827b508b8b82FAF754271483371dc04211","Amount":1},{"Wallet":"0xf4d16fA201C07Aca4Dad9a9c388A67De7c659Afb","Amount":1},{"Wallet":"0xA0f5f3e02aDdfE20b5eBa014Fa080f1852974B31","Amount":1},{"Wallet":"0xC49a3D241efF64561C03e32332D86050FC176285","Amount":1},{"Wallet":"0x6fF486Be54D3d7397af80055F1Ded939411dBD37","Amount":1},{"Wallet":"0x30fb0B59f382f88D2253dC8FCd93dEdc1c7cEB6B","Amount":1},{"Wallet":"0x0C5874D0C1d6045797135401954Dd88DEC92BD23","Amount":1},{"Wallet":"0x9D3d6f93a8EDbeABeDB22aE0946a5924d967d1Aa","Amount":1},{"Wallet":"0x0F59CFEb272e10dbF28a9F5eA5276fC752ad97b8","Amount":1},{"Wallet":"0xc28F04C4c32112c019a978EAbbFAb83974480b40","Amount":1},{"Wallet":"0x9D3d6f93a8EDbeABeDB22aE0946a5924d967d1Aa","Amount":1},{"Wallet":"0x99A4Ad85A4b2173B287199421F61A80Fad54d32d","Amount":5},{"Wallet":"0x6587feeDCa5f8002E3C56B84B1e56B0Ed634E213","Amount":1},{"Wallet":"0xF25Ff510DEb5F46a039c7bF2978e2b27a637Fc1a","Amount":1},{"Wallet":"0xC76d0B38335d834B899DAF2ce13DeeB33AB116F6","Amount":1},{"Wallet":"0x7E9c268d38DA976A1b371Ec72CDC83C728177858","Amount":1},{"Wallet":"0x68843ada62eeb415147ca82e27f6e2a18b918681","Amount":1},{"Wallet":"0x421a04b95a8d9c412677ea3865b346F526e35BA3","Amount":1},{"Wallet":"0x0916affc8c33c4a9e714a788f991f342545941f3","Amount":1},{"Wallet":"0x62f68dBbeeabdFc9b2CeC59F9e12fE79ec8b5adf","Amount":1},{"Wallet":"0x18938852d44Cb3CDACB2F6434e1fDC1633d6c83B","Amount":1},{"Wallet":"0x6e0530f3D8b2f09EFF431300579afFc1a858d792","Amount":1},{"Wallet":"0xDEb8081F530Ed3E3987BE056e5bc5A52CF553F8f","Amount":1},{"Wallet":"0x26Cc066B42dB77f7bf494000ed50f419CfC3E32e","Amount":1},{"Wallet":"0xD66f31E1c3b298867fdAf081fA08c8dAB1f3e0F7","Amount":1},{"Wallet":"0xFF7bE501469180172D8A5aF6c89c8675374df32d","Amount":1},{"Wallet":"0x6819c1F0E7C21A3DBd00534BeC969AF4061D481F","Amount":1},{"Wallet":"0x27c09383788c6F30F0984843cF8F60BbF46f8C44","Amount":1},{"Wallet":"0x125941d986d205D7d259e0e5Be660FD8A1DA3313","Amount":1},{"Wallet":"0x7B1a1E53dc04F26B0AA491C2a6A4E49ff2FA505d","Amount":1},{"Wallet":"0x0A9c42d1dAE2387dAc3742aEC4FB5cA1e46a89BC","Amount":1},{"Wallet":"0xdf8fAcF0f5675aEa23bc12856e3344A8cE5242b8","Amount":1},{"Wallet":"0x785FcA6969195E267F123e3Bb9cC34d88B65Faa0","Amount":1},{"Wallet":"0xb181a83f61Da9C4Be62D88621360a00f2b8ca831","Amount":1},{"Wallet":"0x8A8fF14E84f16750Ffa338a8bbC952053854B0e6","Amount":1},{"Wallet":"0xe16eD597feEB5BB7fF90A9A99b6c7726cccda641","Amount":1},{"Wallet":"0xF531AEDBef761030A8E69F44721A835d8B8a6DdB","Amount":1},{"Wallet":"0xf179ab161BfEeBff01790dc31C4208013142b62D","Amount":1},{"Wallet":"0x091c212b203850222FAeeE8dB5BF02b7a8Aa178a","Amount":1},{"Wallet":"0x096089029a9cCa8eC2d75c44a3CC2b4BC3620266","Amount":1},{"Wallet":"0x93856E71242fD035374bB166a4f6f8319d0093dD","Amount":1},{"Wallet":"0x881893C17d4F4CCA0a9659A2e9fE7154BAC84Bb7","Amount":1},{"Wallet":"0x1ddD890031800683023cD75cE59e3a87D14B1983","Amount":1},{"Wallet":"0x1707d27f6818CF4e51B83413F49E2cbF49F6Cb71","Amount":1},
         {"Wallet":"0xaf2675fb84ea1af88d8714bf50facfa9d574a513","Amount":5},{"Wallet":"0x08463568344Ec6862904b188b5a26Bb81aa12201","Amount":1},
@@ -209,7 +223,10 @@
         {"Wallet":"0xaD4dB4370aF32a80887314D2Eb2D5f16a5204C44","Amount":4},{"Wallet":"0x72d22b74E06746FEd24c9aFa9A07b611c48Fd5e2","Amount":1},
         {"Wallet":"0xC840CC1807E5Ca91D3ba7ecB8d0B8AbFf23e1Fd9","Amount":1},{"Wallet":"0xBBAdA3ab46C92729874a18BF7cF0f2f679B720Bb","Amount":1},
         {"Wallet":"0xdaA5e6e196050B296889D9d5547b70C0C00B740D","Amount":1},{"Wallet":"0xCf93f8B0Ed18a2146dAC2844961D3Fe77cD9359A","Amount":2},
-        {"Wallet":"0xcF4F4E92524FB8f1Af6da7f330794836c4a1091D","Amount":1},{"Wallet":"0xf59384887b66CaE37a81B9BAbB043dA90dFE337a","Amount":1}];
+        {"Wallet":"0xcF4F4E92524FB8f1Af6da7f330794836c4a1091D","Amount":1},{"Wallet":"0xf59384887b66CaE37a81B9BAbB043dA90dFE337a","Amount":1},
+        {"Wallet":"0x0e07f8973ae9ec62662e1d6616e162dac99321de","Amount":2},{"Wallet":"0x425eA509d4bBae6eF19B3F130D62fe819A5F7cEF","Amount":4},
+        {"Wallet":"0xE33D7Ec5e2Fb482305Ab494d51760C37F7B0Fc72","Amount":1},{"Wallet":"0x95cfab54DED2A31b645EDf86C869E3dB98b84015","Amount":1},
+        {"Wallet":"0x2730b66C15E7bcBCa662bd2E964Fa141BCF1Da43","Amount":1}];
     var og = [
   {"Wallet": "0x5cf7fd4312E09d2880c118f15B4CC1ce8f66Afb5", "Amount": 2},
   {"Wallet": "0xC840CC1807E5Ca91D3ba7ecB8d0B8AbFf23e1Fd9", "Amount": 2},
@@ -240,7 +257,9 @@
   {"Wallet": "0xB3870ae0C7052AB60c045bd331249dc12E9AD881", "Amount": 2},
   {"Wallet": "0x52091c5937112cd195f0c3700f80ffe8ce781aaf", "Amount": 2},
   {"Wallet": "0x0ACe27EbA543FCDa9412039b309A321346D395FE", "Amount": 2},
-  {"Wallet": "0x1707d27f6818CF4e51B83413F49E2cbF49F6Cb71", "Amount": 2}
+  {"Wallet": "0x1707d27f6818CF4e51B83413F49E2cbF49F6Cb71", "Amount": 2},
+  {"Wallet": "0x064Faf631118CAC6D8Ff32482Dc51aBD384afbCb", "Amount": 2},
+  {"Wallet": "0x425eA509d4bBae6eF19B3F130D62fe819A5F7cEF", "Amount": 2}
 ];
 
 var golden = [
@@ -255,7 +274,9 @@ var golden = [
   {"Wallet":"0x586c508Fe13D854e8797Fc55eB47b01700A46539","Amount":1},
   {"Wallet":"0xFD6C6CAaFB427a89612F9fb500657F083c7839D7","Amount":1},
   {"Wallet":"0xB4B0edF47a342ee71C079d79c44F0593D4E0Be32","Amount":1},
-  {"Wallet":"0x4546eee297ED0a8a7E6Fdc6b257B338418D9EbDd","Amount":1}
+  {"Wallet":"0x4546eee297ED0a8a7E6Fdc6b257B338418D9EbDd","Amount":1},
+  {"Wallet":"0x8873e45b9f9747F6D52D84F000c4ee53E3107d71","Amount":1},
+  {"Wallet":"0xf60eCCcb02410C4cA1cCDF20CED5AF3E714265d0","Amount":1}
 ];
 
     function checkWallet() {
@@ -319,6 +340,5 @@ var golden = [
         }
     }, 1000);
 </script>
-
-</body>
+    </body>
 </html>

@@ -316,3 +316,122 @@ section img#banner{
         pointer-events: none;
     }
 }
+/* NinjazClub Info Section */
+
+.ninjazclub-info {
+    width: 1300px;
+    height: 700px;
+    background: #2b1055;
+    opacity: 0.95;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.ninjazclub-info h1, .ninjazclub-info h2 {
+    opacity: 1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.ninjazclub-info p {
+    opacity: 1;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.social-logos {
+    padding: 50px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 45px;
+}
+.twitter_photo{
+    width: 50px;
+    height: 50px;
+}
+
+.social-logos a {
+    width: 50px;
+    height: 50px;
+    background: #1B9DF0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.social-logos a:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 936px) {
+    .social-logos{
+        padding: 20px;
+    }
+}
+/* For responsiveness: Adjust the section for smaller devices */
+@media screen and (max-width: 768px) {
+    .ninjazclub-info {
+        padding: 10px;
+    }
+    .ninjazclub-info h1, .ninjazclub-info h2 {
+        font-size: 18px;
+    }
+    .ninjazclub-info p {
+        font-size: 14px;
+    }
+    .social-logos{
+        padding: 50px;
+    }
+    .social-logos div {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 654px) {
+    .social-logos{
+        padding: 30px;
+        margin-left: 70px;
+    }
+    .ninjazclub-info{
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .ninjazclub-info h1, .ninjazclub-info h2 {
+        font-size: 15px;
+    }
+    .ninjazclub-info p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 491px) {
+    .new .ninjazclub-info{
+        width: 400px;
+    }
+    .social-logos{
+        padding: 30px;
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .new .ninjazclub-info{
+        margin-top: 50px;
+        width: 300px;
+    }
+    .social-logos{
+        padding: 10px;
+        margin-left: 22px;
+    }
+}
+
